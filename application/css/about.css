@@ -17,29 +17,6 @@ body {
     margin-left: 27%;
 }
 
-.links {
-    width: 77%;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-.about_page {
-    border-bottom: 2.5px solid #526DB4;
-    padding-bottom: 7px;
-}
-
-.menu_links1 {
-    width: 31%;
-}
-
-.menu_links {
-    text-decoration: none;
-    color: #565555;
-    font-size: 18px;
-}
-
-
 .convas_links {
     list-style: none;
     text-decoration: none;
@@ -53,7 +30,6 @@ body {
     font-weight: 600;
     line-height: 36px;
     letter-spacing: 0em;
-    margin-left: -100%;
     text-align: left;
     margin-top: 36%;
 }
@@ -61,22 +37,33 @@ body {
 .convas_links_down {
     text-decoration: none;
     color: #565555;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 0em;
     text-align: left;
+    margin-left: 5%;
     color: #526DB4;
 }
 
-.privacy {
-    margin-right: 29%;
+.down_convas {
+    height: 30%;
 }
 
-.convas_fb {
-    margin-right: 60%;
+.menu_links1 {
+    width: 24%;
+    margin-right: 10%;
 }
 
+.menu_links {
+    white-space: nowrap;
+    text-decoration: none;
+    color: #565555;
+    font-size: 18px;
+}
+
+.contact {
+    white-space: nowrap;
+}
+ 
 .progress {
     display: none;
     border:0;
@@ -113,6 +100,7 @@ body {
 }
 
 .team_members_name {
+    width: 91%;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 30px;
@@ -154,10 +142,6 @@ body {
 
 
 @media screen and (max-width:768px) {
-    /* .footer_links{
-        display: flex;
-        justify-content: space-around;
-    } */
     .footer_logo{
         display: flex;
     }
@@ -211,5 +195,6 @@ body {
     }
     .header_logo {
         margin-left: 5%;
+        width: 80%;
     }
 }

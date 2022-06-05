@@ -17,13 +17,6 @@ body {
     margin-left: 27%;
 }
 
-.links {
-    width: 77%;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
 .convas_links {
     list-style: none;
     text-decoration: none;
@@ -37,7 +30,6 @@ body {
     font-weight: 600;
     line-height: 36px;
     letter-spacing: 0em;
-    margin-left: -100%;
     text-align: left;
     margin-top: 36%;
 }
@@ -45,29 +37,20 @@ body {
 .convas_links_down {
     text-decoration: none;
     color: #565555;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 30px;
-    letter-spacing: 0em;
     text-align: left;
+    margin-left: 5%;
     color: #526DB4;
 }
 
-.privacy {
-    margin-right: 29%;
-}
-
-.convas_fb {
-    margin-right: 60%;
-}
-
-.contact_page {
-    border-bottom: 2.5px solid #526DB4;
-    padding-bottom: 7px;
+.down_convas {
+    height: 30%;
 }
 
 .menu_links1 {
-    width: 31%;
+    width: 24%;
+    margin-right: 10%;
 }
 
 .menu_links {
@@ -76,6 +59,10 @@ body {
     font-size: 18px;
 }
 
+.contact {
+    white-space: nowrap;
+}
+ 
 .progress {
     display: none;
     border:0;
@@ -100,6 +87,7 @@ body {
     right: 0%;
     top: 2%;
 }
+
 
 .contact_subtitle {
     font-size: 40px;
@@ -172,7 +160,7 @@ body {
     }
 }
 
-@media (max-width:991px) {
+@media (max-width:992px) {
     .footer_logo{
         margin-left: -1%;
     }
@@ -219,7 +207,12 @@ body {
     }
     .header_logo {
         margin-left: 5%;
+        width: 80%;
     }
-    
+    .contact_subtitle {
+        white-space: nowrap;
+        font-size: 7vw;
+        margin-left: -15%;
+    }  
 }
     

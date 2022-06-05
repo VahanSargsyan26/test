@@ -1,51 +1,141 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}   
+}  
 
-
-/* Header */
-.header {
-    box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.25);
-    z-index: 10000;
+body {
+    height: 100%;
+    max-width: 1920px;
 }
 
-.links {
-    width: 77%;
+.header {
+    box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.25);
+}
+
+.header_logo {
+    margin-left: 27%;
+}
+
+.convas_links {
     list-style: none;
-    display: flex;
-    justify-content: space-around;
+    text-decoration: none;
+    text-align: left;
+    color: #565555;
+    font-size: 24px;
+}
+
+.convas_links1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 36%;
+}
+
+.convas_links_down {
+    text-decoration: none;
+    color: #565555;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 5%;
+    color: #526DB4;
+}
+
+.down_convas {
+    height: 30%;
+}
+
+.menu_links1 {
+    width: 24%;
+    margin-right: 10%;
 }
 
 .menu_links {
+    white-space: nowrap;
     text-decoration: none;
     color: #565555;
     font-size: 18px;
 }
+ 
+.progress {
+    display: none;
+    border:0;
+    background-color: #FFF;
+    height: 100%;
+    align-items: center;
+    justify-content: end;
+}
+
+.progress_icon {
+    position: absolute;
+    right: 6%;
+}
+
+.dropdown-menu {
+    border: 0;
+    min-width: 106px;
+}
+
+.close_btn_canvas {
+    position: absolute;
+    right: 0%;
+    top: 2%;
+}
+
 /* Showcase */
 .first_section {
     background-image: url(../img/first-section.png);
     background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: start;
-    position: relative;
 }
 
 .first_girl {
+    left: 0;
+    height: 95%;
+}
+
+.first_girl1 {
     position: absolute;
     left: 0;
+    height: 95%;
     bottom: 0;
-    width: 35%;
 }
 
 .first_minds {
     width: 43.95%;
 }
 
+.english_first_minds {
+    margin-left: 25%;
+    width: 79%;
+}
+
+.minds_text1 {
+    font-size: 3.3vw;
+    color: #A1B61A;
+    font-weight: 600;
+}
+
+.minds_text2 {
+    font-size: 1.7vw;
+    width: 61%;
+    margin-left: 19%;
+}
+
+.english_minds_text {
+    transform: translate(13%, -164%);
+}
+
 .phones_1 {
     width: 28.55%;
+}
+
+.phones_1_english {
+    width: 28.55%;
+    margin-top: 10%;
+    margin-right: -3%;
 }
 
 .right_section {
@@ -60,7 +150,13 @@
 
 .right_section>div:last-child {
     width: 55%;
+    margin-bottom: 2%;
     margin-left: auto;
+}
+
+.download_cont {
+    width: 27% !important;
+    margin-bottom: 5% !important;
 }
 
 .right_section_p {
@@ -71,7 +167,6 @@
     letter-spacing: 0em;
     text-align: center;
     color: #464646;
-
 }
 
 .second_section {
@@ -81,66 +176,15 @@
 .second_section_title {
     font-size: 30px;
 }
+.second_mobile_minds {
+    margin-bottom: -32%;
+}
 
 .second_section_subtitle {
     margin-top: 40px;
     font-size: 18px;
     color: #464646;
 }
-
-.logo {
-    height: 100px;
-    width: 185px;
-    margin: 7px;
-}
-
-.logo2 {
-    height: 80px;
-    width: 195px;
-    margin: 7px;
-}
-
-.logo1 {
-    height: 100px;
-    margin: 7px;
-    width: 250px;
-}
-
-.logo3 {
-    width: 145px;
-}
-
-.logo4 {
-    height: 160px;
-    width: 185px;
-}
-
-.container_logo_section {
-    width: 80%;
-    margin: auto !important;
-    flex-wrap: wrap;
-}
-
-.logo_container {
-    margin-bottom: 40px;
-}
-
-.container_logo {
-    box-shadow: 6px 8px 37px rgb(0 0 0 / 15%);
-    border-radius: 18px;
-    width: 278px;
-    height: 185px;
-    margin: 55px 29px 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo_container2 {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-
 .third_section {
     margin-top: 10%;
     background-image: linear-gradient(#fff 60%, #8258A6 39%);
@@ -184,7 +228,7 @@
 }
 
 .third_girl {
-    width: 42.916%;
+    width: 40.156%;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -197,14 +241,14 @@
 
 .phones {
     width: 38.45%;
-    margin-left: -8%;
+    margin-left: 61%;
     margin-top: 2%;
 }
 
 .minds_3 {
     width: 35.85%;
-    margin-left: 33%;
-    margin-top: -23%;
+    margin-bottom: -13%;
+    margin-top: -18%;
 }
 
 .right_section1 {
@@ -214,27 +258,15 @@
 }
 
 .four_text {
-    padding-top: 1%;
     width: 41%;
     font-size: 1.6vw;
     color: #fff;
     margin-left: auto;
-    margin-right: -1%;
-    display: flex;
-    justify-content: end;
 }
 
 
 .fifth_section {
-    margin-top: 100px;
-    display: flex;
-    justify-content: start;
-    position: relative;
     padding-top: 10%;
-}
-
-.five_up_section {
-    background-color: #fff;
 }
 
 .background_five {
@@ -244,7 +276,6 @@
 
 .five_down_section {
     background-color: #526DB4;
-    width: 100%;
 }
 
 .minds_cont {
@@ -271,7 +302,6 @@
 .five_text {
     margin: 3% 0;
     color: #FFF;
-    font-family: Poppins;
     font-size: 2.3vw;
     font-weight: 500;
     letter-spacing: 0em;
@@ -281,6 +311,7 @@
 .sixth_section {
     background-image: url(../img/background_six.png);
     padding: 3%;
+    background-size: contain;
     background-position: top;
     margin-top: 4%;
     background-repeat: no-repeat;
@@ -292,16 +323,15 @@
     font-weight: 600;
     letter-spacing: 0em;
     margin: 15px;
+    text-align: start;
 }
 
 .six_text2 {
-    text-align: center;
     width: 80%;
     font-family: Poppins;
     font-size: 1.7vw;
     font-weight: 400;;
     letter-spacing: 0em;
-    text-align: center;
 }
 
 .english_bento_logo2 {
@@ -314,13 +344,11 @@
     height: auto;
 }
 
-.phones_section {
-    width: 92%;
-    background-image: url(../img/Vector.png);
-    background-position: center;
-    margin: 4%;
-    background-repeat: no-repeat;
-    background-size: contain;
+.vector {
+    transform:translateX(-50%);
+    left: 50%;
+    z-index: 1000;
+    width: 6.155%;
 }
 
 .phones_section > div {
@@ -343,7 +371,6 @@
     font-weight: 600;
     line-height: 72px;
     letter-spacing: 0em;
-    text-align: right;
 }
 
 .phone_text2 {
@@ -419,6 +446,16 @@
     width: 83%;
 }
 
+.headphone1 {
+    margin-left: auto;
+    width: 39%;
+}
+
+.headphone {
+    width: 93%;
+    margin-left: auto;
+}
+
 .phones_bg2 {
     background-image: url(../img/background_phones_2.png);
     background-size: 80.6%;
@@ -449,6 +486,7 @@
 .phones_bg5 {
     background-image: url(../img/background_phones_5.png);
     background-size: 80.6%;
+    margin-top: 2%;
 }
 
 .phones_text_6 {
@@ -486,82 +524,59 @@
 .phones_text1_9 {
     color:#DE7C33;
 }
-
 .last_section {
-    margin-top: 26%;
-    background-image: linear-gradient(#fff 60%, #B8D137 18%);
-    justify-content: start;
-}
-
-.last_text {
-    padding-top: 1%;
-    width: 43%;
-    font-size: 1.6vw;
-    margin-left: auto;
-    margin-right: -1%;
+    background-image: linear-gradient(#fff 80%, #B8D137 20%);
 }
 
 .last_minds {
-    width: 35.85%;
-    margin-left: 20%;
-    margin-top: -36%;
+    width: 100%;
+    transform: translate(-11%, 65%);
 }
 
-.last_phones {
-    margin-left: 73%;
-    margin-top: -54%;
+.last_minds_cont {
+    width: 30.02%;
+}
+
+.last_girl {
+    bottom: 0;
+    width: 40.15%;
 }
 
 .last_minds_text {
-    left: 14%;
-    top: 18%;
     font-family: Poppins;
     font-size: 2.5vw;
     font-weight: 700;
-    white-space: nowrap;
     letter-spacing: 0em;
     text-align: center;
-    color: #464646;
+    margin-top: -2%;
 }
-/* .content-1 {
-    -moz-box-ordinal-group: 1;
-    -webkit-box-ordinal-group: 1;
-    -webkit-order: 1;
-    -ms-flex-order: 1;
-    order: 1;
+
+.last_section_text {
+    width: 75%;
+    font-size: 1.666vw;
+    margin-bottom: 0;
+    color: #fff;
+    padding-bottom: 4%;
 }
-.content-2 {
-    -moz-box-ordinal-group: 2;
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 2;
-    -ms-flex-order: 2;
-    order: 2;
-} */
 
-
-
-
-
-
-
-
-
-
-
-
-
+.last_phones {
+    width: 72.08%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
 .footer {
     background-color: #526DB4;
     padding-bottom: 20px;
 }
 
 .footer_logo {
-    margin-top: 20px;
-    margin-left: 4%;
+    margin-left: 5%;
+    margin-top: 3%;
 }
 
 .footer_links {
-    font-size: 20px;
+    text-align: end;
+    font-size: 24px;
     text-decoration: none;
     color: #fff;
 }
@@ -575,59 +590,124 @@
 }
 
 .footer_text {
-    font-size: 18px;
+    font-size: 24px;
     white-space: nowrap;
+    margin: 1rem;
 }
-
-
-@media screen and (max-width:768px){
-    .footer_links{
+@media (max-width:992px) {
+    .progress {
         display: flex;
-        justify-content: space-around;
+    }
+    .links {
+        display: none;
+    }
+    .header_logo {
+        margin-left: 5%;
+        width: 80%;
     }
     .footer_logo{
+        margin-left: -1%;
+    }
+    .footer_links {
         display: flex;
-        margin: auto;
+        flex-direction: column;
+        text-align: left !important;
+        margin-top: 1%;
     }
     .p_follow_us {
+        justify-content: flex-start !important;
+        padding-left: 3%;
+    }
+    .footer_text {
+        margin-left: -1%;
+        margin-top: 3%;
+    }
+    .follow_us_group {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .phones_1 {
+        display: none;
+    }
+    .first_minds{
+        margin-right: 28%;
+    }
+    .download_cont {
+        display: none !important;
+    }
+    .first_mobile_phones {
         display: flex !important;
-        justify-content: center !important;
-        margin: auto;
+        width: 55%;
+        margin-top: 26%;
+        margin-bottom: -10%;
+        margin-right: -13%;
+        z-index: 99;
     }
-}
+    .first_girl {
+        position: absolute;
+        left: 0%;
+        height: 95%;
+        bottom: 0;
+    }
 
-@media screen and (max-width: 1246px) {
-    .app_store{
-        margin-top: 10px;
+    .first_minds {
+        width: 55%;
+        margin-top: -36%;
+        margin-right: -35%;
     }
-}
-@media screen and (max-width: 1040px) {
-    .first_text {
-        white-space: normal;
+    .download_mobile {
+        display: flex !important;
+        padding: 10%;
+        padding-bottom:0;
     }
-    .download_buttons {
-        position: relative;
-        right: 167px;
-    }
-    .app_button p {
-        font-size: 12px;
-    }
-}
-@media screen and (max-width: 600px) {
-    .second_section_title {
+    .right_section_p {
         font-size: 18px;
-    } 
-    .second_section_subtitle {
-        font-size: 12px;
-    } 
-}
-@media screen and (max-width:510px) {
-    .sixth_logo {
-        margin-right: 0;
     }
-}
-
-@media  screen and (max-width:844px) {
+    .left_section {
+        display: none !important;
+    }
+    .second_mobile {
+        display: flex !important;
+        flex-direction: column;
+    }
+    .third_section {
+        padding: 0;
+        margin: 0;
+        background-image: linear-gradient(#fff 34%, #8258A6 30%);
+    }
+    .second_mobile_phones {
+        display: flex !important;
+    }
+    .second_mobile_phone {
+        width: 84%;
+        margin-top: 66%;
+        height: 57%;
+    }
+    .right_section1 {
+        display: none !important;
+    }
+    .mobile_4 {
+        margin-top: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .phone_center {
+        width: 26%;
+    }
+    .fourth_section {
+        margin-top: -3%;
+        padding: 0;
+    }
+    .second_mobile_text {
+        display: flex !important;
+        font-size: 18px;
+    }
+    .five_text {
+        font-size: 20px;
+        padding: 3%;
+    }
     .english_bento_cont {
         display: flex;
         flex-direction: column;
@@ -635,11 +715,137 @@
     }
     .english_bento_logo2 {
         margin-left: 10px;
+        padding: 2%;
     }
     .six_text {
-        margin-left: 0;
-        margin-right: 0;
+        font-size: 5.5vw;
+    }
+    .six_text2 {
+        text-align: start !important;
+        width: 100%;
+    }
+    .girls_mobile_list {
+        display: flex !important;
+        max-width: 992px;
+    }
+    .girls_list {
+        display: none;
+    }
+    .four_girl {
+        width: 60%;
+    }
+    .minds_cont {
+        width:30%;
+    }
+    .phones_section_p {
+        font-size: 18px;
+        line-height: 27px;
+        width: 93%;
+    }
+    .phones_section {
+        background-image: none;
+    }
+    .phones_section > div {
+        flex-direction: column-reverse;
+    }
+    .headphone_p_mobile {
+        flex-direction: row-reverse !important;
+    }
+    .phones_bg {
+        width: 53.7%;
+        margin-right: -21%;
+        background-size: 100%;
+    }
+    .img_container {
+        width: 85%;
+        transform: translate(-67%, 0);
+    }
+    .headphone, .headphone1 {
+        width: 68px;
+        height: 72px;
+    }
+    .five_text {
+        font-size: 20px;
+        padding: 3%;
+    }
+    .phone_text3 {
+        width: 100%;
+        font-size: 18px;
+    }
+    .phone_text2 {
+        display: none;
+    }
+    .phone_text1 {
+        white-space: nowrap;
+        font-size: 20px;
+        padding: 3%;
+        margin-top: -4%;
+    }
+    .second_mobile {
+        flex-direction: column !important;
+    }
+    .img_container2 {
+        width: 85%;
+    }
+    .vector {
+        display: none;
+    }
+    .phones_bg2 {
+        margin-right: 12%;
+    }
+    .second_mobile_none_text {
+        display: none;
+    }
+    .second_down_section {
+        width: 100%;
+        padding: 3rem;
+    }
+    .headphone_p_mobile1 {
+        flex-direction: row !important;
+    }
+    .headphone_second_mobile{
+        height: 72px;
+    }
+    .phone_text3_2 {
+        width: 100%;
+    }
+    .phone_text1_4 {
+        color:#DE7C33;
+        font-size: 20px;
+    }
+    .phone_text1_2 {
+        font-size: 20px;
+    }
+    .last_section_text {
+        display: none;
+    }
+    .last_minds {
+        width: 100%;
+        transform: translate(-25%, 7%);
+    }
+    .last_minds_text {
+        margin-top: 0;
+    }
+    .last_section {
+        background-image: linear-gradient(#fff 20%, #B8D137 19%);
+    }
+    .last_phones {
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 2%;
+    }
+    .phones_1_english {
+        display: none;
+    }
+    .english_first_minds {
+        margin-left: 72%;
+        width: 100%;
+        margin-top: -41%;
+    }
+    .minds_text1 {
         margin-bottom: 3%;
-        font-size: 6.5vw;
+    }
+    .english_minds_text {
+        transform: translate(71%, -181%);
     }
 }
