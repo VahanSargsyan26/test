@@ -54,6 +54,7 @@ body {
 }
 
 .menu_links {
+    white-space: nowrap;
     text-decoration: none;
     color: #565555;
     font-size: 18px;
